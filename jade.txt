@@ -1,0 +1,1 @@
+"Hello my name is jade, i am a web developer currently learning go"

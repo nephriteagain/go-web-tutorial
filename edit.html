@@ -1,6 +1,10 @@
-<h1>Editing {{.Title}}</h1>
+<h1 style="text-align: center;">Editing {{.Title}}</h1>
 
-<form action="/save/{{.Title}}" method="POST">
-<div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
-<div><input type="submit" value="Save"></div>
+<form action="/save/{{.Title}}" method="POST" style="display: flex;align-items: center; justify-content: center; flex-direction: column; gap: 16px;">
+<div>
+    <textarea name="body" rows="20" cols="80" style="background-color:black;color:white;width:300px;height:200px;">
+    {{printf "%s" .Body}}
+    </textarea>
+</div>
+<div><input type="submit" value="Save" style="width: 100px;text-align: center; padding-top: 6px; padding-bottom: 6px; background-color: green; color: white; font-weight: bold; border-radius: 4px;"></div>
 </form>
